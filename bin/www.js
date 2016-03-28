@@ -6,6 +6,7 @@ import {
   registerLocalClient,
   registerAdminUser,
 } from '../server/db';
+import generateData from '../server/db/generateData';
 import { development } from '../server/db/config';
 
 const port = process.env.PORT || 3000;
@@ -21,6 +22,7 @@ const port = process.env.PORT || 3000;
   try {
     await registerLocalClient();
     await registerAdminUser();
+    await generateData();
 
     await app.listen(port);
     console.log(`Server started on port ${port}`);

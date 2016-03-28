@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "bcrypt-as-promised": "^1.1.0",
+    "csv-parse": "^1.0.2",
     "import-dir": "0.0.1",
     "kerberos": "0.0.18",
     "koa": "^2.0.0-alpha.3",
@@ -84,6 +85,7 @@
     "passport-facebook": "^2.1.0",
     "passport-http": "^0.3.0",
     "passport-http-bearer": "^1.0.1",
+    "stream-transform": "^0.1.1",
     "uid": "0.0.2"
   }
 }
